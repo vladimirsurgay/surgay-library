@@ -5969,7 +5969,15 @@ export function filterMaterials(
   let result = materials
 
   if (categoryId !== 'all') {
-    result = result.filter(m => m.category === categoryId)
+    // Проверяем, это фильтр по уровню дохода или по теме
+    const incomeLevels = ['start', 'growth', 'scale']
+    if (incomeLevels.includes(categoryId)) {
+      // Фильтр по уровню дохода - проверяем массив incomeLevel
+      result = result.filter(m => m.incomeLevel?.includes(categoryId as 'start' | 'growth' | 'scale'))
+    } else {
+      // Фильтр по теме - проверяем поле category
+      result = result.filter(m => m.category === categoryId)
+    }
   }
 
   if (formatId !== 'all') {

@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { Menu, X, BookOpen, Send } from 'lucide-react'
 
 const navLinks = [
+  { href: '/', label: 'Главная' },
   { href: '/library', label: 'Библиотека' },
   { href: '/about', label: 'О проекте' },
 ]

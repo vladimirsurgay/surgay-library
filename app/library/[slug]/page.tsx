@@ -145,13 +145,13 @@ export default function MaterialPage({ params }: PageProps) {
 
         {/* Content Images (if exists) */}
         {material.contentImages && material.contentImages.length > 0 && (
-          <div className="mb-8 space-y-4">
+          <div className="mb-8 grid grid-cols-2 md:grid-cols-4 gap-4">
             {material.contentImages.map((img, index) => (
-              <div key={index} className="rounded-2xl overflow-hidden">
+              <div key={index} className="rounded-xl overflow-hidden bg-[#1A1A2E]">
                 <img
                   src={img}
                   alt={`${material.title} - изображение ${index + 1}`}
-                  className="w-full h-auto"
+                  className="w-full h-auto object-cover"
                 />
               </div>
             ))}
