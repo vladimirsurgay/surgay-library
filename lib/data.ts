@@ -588,11 +588,10 @@ LTV делает богатым, пусть клиент будет с тобо�
     categoryIcon: '🎯',
     format: 'article',
     tags: ['миллионер', 'компетенции', 'стратегия', 'рост'],
-    image: '/images/materials/material-6-kompetencij.png',
+    iconName: 'Crown',
     duration: '3-5 мин',
     createdAt: '2023-07-28',
     incomeLevel: ['growth', 'scale'],
-    thumbnail: '/images/materials/6-kompetenciy.jpg',
     content: `Все миллионеры, которых я знаю, обладают шестью компетенциями:
 
 ---

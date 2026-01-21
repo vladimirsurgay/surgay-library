@@ -146,8 +146,8 @@ export default function MaterialPage({ params }: PageProps) {
         {/* Content Images (if exists) */}
         {material.contentImages && material.contentImages.length > 0 && (
           <div className={`mb-8 grid gap-4 ${
-            material.contentImages.length === 2 ? 'grid-cols-2' :
-            material.contentImages.length === 3 ? 'grid-cols-3' :
+            material.contentImages.length === 2 ? 'grid-cols-1 md:grid-cols-2' :
+            material.contentImages.length === 3 ? 'grid-cols-1 md:grid-cols-3' :
             material.contentImages.length === 4 ? 'grid-cols-2 md:grid-cols-4' :
             'grid-cols-2 md:grid-cols-5'
           }`}>
