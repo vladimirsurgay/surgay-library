@@ -86,8 +86,8 @@ export function Card({
 }: CardProps) {
   const FormatIcon = formatConfig[format].icon
 
-  // Генерируем thumbnail URL: приоритет - image, потом thumbnail, потом videoId, иначе null
-  const thumbnailUrl = image || thumbnail || (videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : null)
+  // Генерируем thumbnail URL: приоритет - thumbnail, потом videoId, потом image, иначе null
+  const thumbnailUrl = thumbnail || (videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : null) || image
 
   // Получаем компонент иконки из маппинга
   const IconComponent = iconName ? iconMap[iconName] : null

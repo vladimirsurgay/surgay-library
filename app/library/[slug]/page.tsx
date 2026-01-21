@@ -132,6 +132,32 @@ export default function MaterialPage({ params }: PageProps) {
           </div>
         </header>
 
+        {/* Main Image (if exists and no video) */}
+        {material.image && !material.videoId && (
+          <div className="mb-8 rounded-2xl overflow-hidden">
+            <img
+              src={material.image}
+              alt={material.title}
+              className="w-full h-auto"
+            />
+          </div>
+        )}
+
+        {/* Content Images (if exists) */}
+        {material.contentImages && material.contentImages.length > 0 && (
+          <div className="mb-8 space-y-4">
+            {material.contentImages.map((img, index) => (
+              <div key={index} className="rounded-2xl overflow-hidden">
+                <img
+                  src={img}
+                  alt={`${material.title} - изображение ${index + 1}`}
+                  className="w-full h-auto"
+                />
+              </div>
+            ))}
+          </div>
+        )}
+
         {/* Video (if exists) */}
         {material.videoId && (
           <div className="mb-8">
