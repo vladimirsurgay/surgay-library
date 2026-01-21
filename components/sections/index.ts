@@ -1,0 +1,5 @@
+export { HeroSection } from './HeroSection'
+export { HowToUseSection } from './HowToUseSection'
+export { CategoriesSection } from './CategoriesSection'
+export { PopularSection } from './PopularSection'
+export { TelegramCTA } from './TelegramCTA'

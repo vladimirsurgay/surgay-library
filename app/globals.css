@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-dark-primary: #0D0D1A;
+  --bg-dark-secondary: #1A1A2E;
+  --bg-dark-card: #16162A;
+  --accent-purple: #7C3AED;
+  --accent-purple-light: #A78BFA;
+  --accent-cyan: #22D3EE;
+  --accent-pink: #EC4899;
+  --text-gray: #9CA3AF;
+  --text-muted: #6B7280;
+  --light-bg: #F0F0F8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-dark-primary);
+  color: white;
+  min-height: 100vh;
+}
+
+/* Утилитарные классы */
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(to right, var(--accent-purple), var(--accent-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-pink {
+    background: linear-gradient(to right, var(--accent-cyan), var(--accent-pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .border-gradient {
+    border: 1px solid transparent;
+    background: linear-gradient(var(--bg-dark-card), var(--bg-dark-card)) padding-box,
+                linear-gradient(135deg, #7C3AED, #22D3EE) border-box;
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1;
+  }
+
+  .hover-glow {
+    transition: all 0.3s;
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 40px rgba(124, 58, 237, 0.4);
+  }
+}
+
+/* Компонентные стили */
+@layer components {
+  .card-dark {
+    background-color: var(--bg-dark-card);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s;
+  }
+
+  .card-dark:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(124, 58, 237, 0.15);
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, #7C3AED 0%, #3B82F6 100%);
+    color: white;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 0 40px rgba(124, 58, 237, 0.4);
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    background-color: var(--bg-dark-card);
+    color: white;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(124, 58, 237, 0.5);
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--accent-purple);
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+  }
+
+  .section-dark {
+    background-color: var(--bg-dark-primary);
+    padding: 5rem 1rem;
+  }
+
+  .section-light {
+    background-color: var(--light-bg);
+    padding: 5rem 1rem;
+    color: #111827;
+  }
+
+  .badge-category {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    background-color: rgba(124, 58, 237, 0.15);
+    color: var(--accent-purple-light);
+  }
+
+  .badge-format {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    background-color: rgba(34, 211, 238, 0.15);
+    color: var(--accent-cyan);
+  }
+
+  .highlight-box {
+    background-color: rgba(124, 58, 237, 0.1);
+    border-left: 4px solid var(--accent-purple);
+    border-radius: 0 12px 12px 0;
+    padding: 1rem;
+  }
+}
+
+/* Скроллбар */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-purple);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9061F9;
+}
+
+/* Selection */
+::selection {
+  background: rgba(124, 58, 237, 0.3);
+  color: white;
+}
+
+/* Hide scrollbar for filter tabs */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

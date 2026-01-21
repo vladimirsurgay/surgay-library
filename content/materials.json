@@ -1,0 +1,37 @@
+{
+  "materials": [
+    {
+      "id": "1",
+      "slug": "marketing-strategy-template",
+      "title": "Шаблон маркетинговой стратегии",
+      "description": "Полный шаблон для разработки маркетинговой стратегии вашего бизнеса",
+      "category": "template",
+      "tags": ["стратегия", "планирование", "маркетинг"],
+      "preview": "/images/materials/strategy-template.png",
+      "downloadUrl": "/templates/marketing-strategy-template.pdf",
+      "createdAt": "2024-01-15"
+    },
+    {
+      "id": "2",
+      "slug": "social-media-checklist",
+      "title": "Чек-лист для SMM",
+      "description": "Подробный чек-лист для ведения социальных сетей",
+      "category": "checklist",
+      "tags": ["SMM", "социальные сети", "контент"],
+      "preview": "/images/materials/smm-checklist.png",
+      "downloadUrl": "/templates/smm-checklist.pdf",
+      "createdAt": "2024-01-20"
+    },
+    {
+      "id": "3",
+      "slug": "seo-guide",
+      "title": "Гайд по SEO-оптимизации",
+      "description": "Пошаговое руководство по SEO для начинающих",
+      "category": "guide",
+      "tags": ["SEO", "оптимизация", "поисковые системы"],
+      "preview": "/images/materials/seo-guide.png",
+      "downloadUrl": "/templates/seo-guide.pdf",
+      "createdAt": "2024-02-01"
+    }
+  ]
+}
