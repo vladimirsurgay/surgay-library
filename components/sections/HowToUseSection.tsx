@@ -90,11 +90,11 @@ export function HowToUseSection() {
               <p className="font-medium text-gray-900 mb-1">Если только начинаешь:</p>
               <p className="text-gray-600">
                 Смотри видео{' '}
-                <Link href="/library/kak-vyjti-na-1-mln-chuzhimi-rukami" className="text-[#7C3AED] hover:underline">
+                <Link href="/library/gayd-s-nulya-do-100k-video" className="text-[#7C3AED] hover:underline">
                   «С нуля до 100к»
                 </Link>
                 {' '}+ гайд{' '}
-                <Link href="/library/start-v-marketinge-s-nulya" className="text-[#7C3AED] hover:underline">
+                <Link href="/library/gayd-s-nulya-do-100k" className="text-[#7C3AED] hover:underline">
                   «Как сделать первую сотку»
                 </Link>
               </p>
@@ -103,11 +103,11 @@ export function HowToUseSection() {
               <p className="font-medium text-gray-900 mb-1">Хочешь вырасти в доходе:</p>
               <p className="text-gray-600">
                 Изучи{' '}
-                <Link href="/library/tehnika-rost" className="text-[#7C3AED] hover:underline">
+                <Link href="/library/tehnika-rost-peregovory" className="text-[#7C3AED] hover:underline">
                   технику РОСТ
                 </Link>
                 {' '}+{' '}
-                <Link href="/library/skript-diagnostik-75-mln" className="text-[#7C3AED] hover:underline">
+                <Link href="/library/skript-prodayushchih-diagnostik" className="text-[#7C3AED] hover:underline">
                   скрипт продающих диагностик
                 </Link>
               </p>
@@ -116,11 +116,11 @@ export function HowToUseSection() {
               <p className="font-medium text-gray-900 mb-1">Строишь команду:</p>
               <p className="text-gray-600">
                 Начни с{' '}
-                <Link href="/library/delegirovanie-s-dnya-0" className="text-[#7C3AED] hover:underline">
+                <Link href="/library/kak-pravilno-delegirovat-uprazhnenie" className="text-[#7C3AED] hover:underline">
                   «Делегирование с дня 0»
                 </Link>
                 {' '}+{' '}
-                <Link href="/library/26-kachestv-a-klassa" className="text-[#7C3AED] hover:underline">
+                <Link href="/library/26-kachestv-sotrudnikov-a-klassa" className="text-[#7C3AED] hover:underline">
                   «26 качеств А-класса»
                 </Link>
               </p>
