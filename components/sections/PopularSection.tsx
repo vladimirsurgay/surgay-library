@@ -65,7 +65,6 @@ export function PopularSection() {
         <SectionTitle
           title="Популярные"
           highlight="материалы"
-          subtitle="Проверено на 1000+ учениках"
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">

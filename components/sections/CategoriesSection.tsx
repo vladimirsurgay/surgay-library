@@ -1,20 +1,35 @@
+'use client'
+
+import { useState } from 'react'
 import { CategoryCard, SectionTitle } from '@/components/ui'
 
-const categories = [
+// Категории по уровню дохода
+const incomeCategories = [
   {
     title: 'Старт',
     icon: '🚀',
     description: 'От 0 до первых 100 000 ₽',
-    href: '/library?category=start',
-    count: 5,
+    href: '/library?incomeLevel=start',
+    count: 24,
   },
   {
     title: 'Рост',
-    icon: '��',
+    icon: '📈',
     description: 'От 100к до 300-500к',
-    href: '/library?category=growth',
-    count: 4,
+    href: '/library?incomeLevel=growth',
+    count: 52,
   },
+  {
+    title: 'Масштаб',
+    icon: '💰',
+    description: 'От 300к и выше',
+    href: '/library?incomeLevel=scale',
+    count: 62,
+  },
+]
+
+// Категории по темам
+const topicCategories = [
   {
     title: 'Продажи',
     icon: '💎',
@@ -67,16 +82,49 @@ const categories = [
 ]
 
 export function CategoriesSection() {
+  const [mode, setMode] = useState<'income' | 'topics'>('income')
+
+  const categories = mode === 'income' ? incomeCategories : topicCategories
+
   return (
     <section className="section-dark">
       <div className="max-w-6xl mx-auto">
         <SectionTitle
           title="Выбери свою"
           highlight="тему"
-          subtitle="9 тематических сборников — найди то, что нужно именно тебе"
+          subtitle={mode === 'income' ? '3 уровня дохода — найди свой этап' : '7 тематических сборников — найди то, что нужно именно тебе'}
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Переключатель режимов */}
+        <div className="flex justify-center gap-2 mb-8">
+          <button
+            onClick={() => setMode('income')}
+            className={`px-6 py-3 rounded-lg text-sm font-medium transition-all ${
+              mode === 'income'
+                ? 'bg-accent-purple text-white shadow-lg shadow-accent-purple/30'
+                : 'bg-dark-card text-text-gray hover:text-white hover:bg-dark-card/80'
+            }`}
+          >
+            По уровню дохода
+          </button>
+          <button
+            onClick={() => setMode('topics')}
+            className={`px-6 py-3 rounded-lg text-sm font-medium transition-all ${
+              mode === 'topics'
+                ? 'bg-accent-purple text-white shadow-lg shadow-accent-purple/30'
+                : 'bg-dark-card text-text-gray hover:text-white hover:bg-dark-card/80'
+            }`}
+          >
+            По темам
+          </button>
+        </div>
+
+        {/* Сетка категорий */}
+        <div className={`grid gap-6 ${
+          mode === 'income'
+            ? 'grid-cols-1 sm:grid-cols-3'
+            : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'
+        }`}>
           {categories.map((category) => (
             <CategoryCard
               key={category.title}

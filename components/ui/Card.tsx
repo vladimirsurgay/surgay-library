@@ -88,8 +88,8 @@ export function Card({
             {title}
           </h3>
 
-          {/* Description - appears on hover */}
-          <p className="text-[#9CA3AF] text-sm line-clamp-2 flex-grow opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          {/* Description - always visible */}
+          <p className="text-[#9CA3AF] text-sm line-clamp-2 flex-grow">
             {description}
           </p>
 
