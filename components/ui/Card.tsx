@@ -11,6 +11,7 @@ interface CardProps {
   href: string
   thumbnail?: string
   videoId?: string
+  image?: string
   duration?: string
   tags?: string[]
 }
@@ -30,13 +31,14 @@ export function Card({
   href,
   thumbnail,
   videoId,
+  image,
   duration,
   tags,
 }: CardProps) {
   const FormatIcon = formatConfig[format].icon
 
-  // Генерируем thumbnail URL: приоритет - thumbnail, потом videoId, иначе null
-  const thumbnailUrl = thumbnail || (videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : null)
+  // Генерируем thumbnail URL: приоритет - image, потом thumbnail, потом videoId, иначе null
+  const thumbnailUrl = image || thumbnail || (videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : null)
 
   return (
     <Link href={href} className="block group">

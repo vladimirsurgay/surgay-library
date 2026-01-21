@@ -13,6 +13,7 @@ export interface Material {
   content?: string
   videoId?: string
   thumbnail?: string
+  image?: string
   downloads?: { name: string; url: string; size?: string }[]
   externalUrl?: string
   incomeLevel?: ('start' | 'growth' | 'scale')[]
@@ -969,6 +970,7 @@ LTV делает богатым, пусть клиент будет с тобо�
     tags: ['продуктивность', 'телефон', 'digital-детокс', 'GTD'],
     videoId: 'GbLclnu-QGc',
     thumbnail: 'https://img.youtube.com/vi/GbLclnu-QGc/maxresdefault.jpg',
+    image: '/images/materials/material-android-focus.jpg',
     createdAt: '2024-07-05',
     incomeLevel: ['scale'],
     content: `Видели запись доклада Курпатова на саммите Сбера в Давосе?
@@ -1314,6 +1316,7 @@ LTV делает богатым, пусть клиент будет с тобо�
     categoryIcon: '🎯',
     format: 'article',
     tags: ['рост', 'ускорители', 'стратегия', 'карьера'],
+    image: '/images/materials/material-tbilisi-accelerators.jpg',
     createdAt: '2024-09-13',
     incomeLevel: ['start', 'growth'],
     content: `**Ключевая мысль:**
@@ -1401,6 +1404,7 @@ LTV делает богатым, пусть клиент будет с тобо�
     categoryIcon: '💎',
     format: 'article',
     tags: ['переговоры', 'уверенность', 'техника', 'психология'],
+    image: '/images/materials/material-method-power.jpg',
     createdAt: '2024-10-23',
     incomeLevel: ['growth'],
     content: `В подкасте рассказал личный болезненный опыт:
@@ -2084,6 +2088,7 @@ LTV делает богатым, пусть клиент будет с тобо�
     format: 'article',
     tags: ['старт', '100к', 'стратегия', 'новичкам'],
     externalUrl: 'https://telegra.ph/Kak-nachat-poluchat-ot-100-000-v-marketinge-s-0-stabilno-08-08',
+    image: '/images/materials/material-start-zero.jpg',
     createdAt: '2025-08-11',
     incomeLevel: ['start'],
     content: `Поделился шорт-катами, как попасть в СТАБИЛЬНЫЕ 100к гораздо быстрее.
@@ -2136,6 +2141,7 @@ LTV делает богатым, пусть клиент будет с тобо�
     tags: ['старт', '100к', 'стратегия', 'план'],
     videoId: 'fLeKuURL5Po',
     thumbnail: 'https://img.youtube.com/vi/fLeKuURL5Po/maxresdefault.jpg',
+    image: '/images/materials/material-video-guide-100k.jpg',
     createdAt: '2025-09-22',
     incomeLevel: ['start'],
     content: `Пошагово, в реалиях 2025–2026.
@@ -2166,6 +2172,7 @@ LTV делает богатым, пусть клиент будет с тобо�
     tags: ['планёрки', 'команда', 'zoom', 'шаблон'],
     videoId: 'oSmh6geJsIg',
     thumbnail: 'https://img.youtube.com/vi/oSmh6geJsIg/maxresdefault.jpg',
+    image: '/images/materials/material-achievements-template.jpg',
     externalUrl: 'https://www.figma.com/board/0vLAcDZc2vDYkP0X2DoB8H/Шаблон-пятничной-планерки',
     createdAt: '2025-10-29',
     incomeLevel: ['growth', 'scale'],
@@ -2199,6 +2206,7 @@ LTV делает богатым, пусть клиент будет с тобо�
     tags: ['найм', 'миллион', 'стратегия', 'карьера'],
     videoId: 'ZeAmOQIauc0',
     thumbnail: 'https://img.youtube.com/vi/ZeAmOQIauc0/maxresdefault.jpg',
+    image: '/images/materials/material-2026-taxes.jpg',
     createdAt: '2025-11-24',
     incomeLevel: ['scale'],
     content: `Читал Канемана «Думай медленно, решай быстро». Нобелевский лауреат по принятию решений. И наткнулся на исследование:
@@ -2522,6 +2530,7 @@ LTV делает богатым, пусть клиент будет с тобо�
     categoryIcon: '🎯',
     format: 'article',
     tags: ['продажи', 'кейс', 'техника', 'массаж'],
+    image: '/images/materials/material-cold-shower.jpg',
     createdAt: '2025-11-10',
     incomeLevel: ['scale'],
     content: `
@@ -3173,6 +3182,7 @@ Telegram, LinkedIn, базы, чаты — где угодно.
     categoryIcon: '🎯',
     format: 'article',
     tags: ['маркетинг', 'доход', 'план', 'услуги'],
+    image: '/images/materials/material-500k-story.jpg',
     createdAt: '2025-08-21',
     incomeLevel: ['growth', 'scale'],
     content: `
@@ -5167,6 +5177,7 @@ Middle — это фундамент. Здесь ты учишься **само�
     format: 'video',
     tags: ['стратегия', '2025', 'лидген', 'план'],
     videoId: 'J2iR8wNTOiA',
+    image: '/images/materials/material-proryv-case.jpg',
     createdAt: '2025-08-01',
     incomeLevel: ['start', 'growth'],
     content: `Перелидоз осенью 2025: готовая стратегия прорыва на ближайший сезон
