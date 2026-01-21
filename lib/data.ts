@@ -23,7 +23,7 @@ export interface Material {
 
 // Хелпер для генерации YouTube thumbnail
 export function getYouTubeThumbnail(videoId: string): string {
-  return `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`
+  return `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`
 }
 
 export const categories = [
@@ -59,7 +59,7 @@ export const materials: Material[] = [
     format: 'video',
     tags: ['уверенность', 'продажи', 'упражнение', 'кейс'],
     videoId: '7vHMThjE2Cw',
-    thumbnail: 'https://img.youtube.com/vi/7vHMThjE2Cw/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/7vHMThjE2Cw/hqdefault.jpg',
     createdAt: '2022-10-08',
     incomeLevel: ['start', 'growth'],
     content: `Во время «Быстрого Прорыва» я дал растяжку для онлайн-участников. Зацените разницу!
@@ -727,7 +727,7 @@ LTV делает богатым, пусть клиент будет с тобо�
     format: 'video',
     tags: ['команда', 'делегирование', 'операционка', 'проджекты'],
     videoId: 'S8Nqe9fDIUk',
-    thumbnail: 'https://img.youtube.com/vi/S8Nqe9fDIUk/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/S8Nqe9fDIUk/hqdefault.jpg',
     duration: '23 мин',
     createdAt: '2023-11-11',
     incomeLevel: ['scale'],
@@ -751,7 +751,7 @@ LTV делает богатым, пусть клиент будет с тобо�
     format: 'video',
     tags: ['кастдев', 'продукт', 'уникальность', 'клиенты'],
     videoId: 'teKk9a1mDEo',
-    thumbnail: 'https://img.youtube.com/vi/teKk9a1mDEo/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/teKk9a1mDEo/hqdefault.jpg',
     duration: '26 мин',
     createdAt: '2023-11-13',
     incomeLevel: ['growth', 'scale'],
@@ -996,7 +996,7 @@ LTV делает богатым, пусть клиент будет с тобо�
     format: 'video',
     tags: ['продуктивность', 'телефон', 'digital-детокс', 'GTD'],
     videoId: 'GbLclnu-QGc',
-    thumbnail: 'https://img.youtube.com/vi/GbLclnu-QGc/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/GbLclnu-QGc/hqdefault.jpg',
     createdAt: '2024-07-05',
     incomeLevel: ['scale'],
     content: `Видели запись доклада Курпатова на саммите Сбера в Давосе?
@@ -1193,7 +1193,7 @@ LTV делает богатым, пусть клиент будет с тобо�
     format: 'video',
     tags: ['система', 'команда', 'миллион', 'план'],
     videoId: 'AjyH3TTt1xc',
-    thumbnail: 'https://img.youtube.com/vi/AjyH3TTt1xc/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/AjyH3TTt1xc/hqdefault.jpg',
     duration: '40 мин',
     createdAt: '2024-09-10',
     incomeLevel: ['scale'],
@@ -1969,7 +1969,7 @@ LTV делает богатым, пусть клиент будет с тобо�
     format: 'video',
     tags: ['кейс', 'кастдев', 'рост', 'история'],
     videoId: 'yDyWm97sZFo',
-    thumbnail: 'https://img.youtube.com/vi/yDyWm97sZFo/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/yDyWm97sZFo/hqdefault.jpg',
     createdAt: '2025-04-29',
     incomeLevel: ['scale'],
     content: `Пошёл учиться настраивать Яндекс.Директ, зацепился за первую возможность и задал себе правильный вопрос:
@@ -2009,7 +2009,7 @@ LTV делает богатым, пусть клиент будет с тобо�
     format: 'video',
     tags: ['разбор', 'кейс', 'рост', 'продажи'],
     videoId: 'XCCQE4XEc5c',
-    thumbnail: 'https://img.youtube.com/vi/XCCQE4XEc5c/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/XCCQE4XEc5c/hqdefault.jpg',
     createdAt: '2025-05-20',
     incomeLevel: ['growth', 'scale'],
     content: `Это не гипотетическая стратегия, а пример роста **НА ВАШИХ ГЛАЗАХ**.
@@ -2035,7 +2035,7 @@ LTV делает богатым, пусть клиент будет с тобо�
     format: 'video',
     tags: ['152-ФЗ', 'юридика', 'персональные данные', 'документы'],
     videoId: 'JECDMThY7DY',
-    thumbnail: 'https://img.youtube.com/vi/JECDMThY7DY/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/JECDMThY7DY/hqdefault.jpg',
     createdAt: '2025-05-30',
     incomeLevel: ['start', 'growth', 'scale'],
     downloads: [
@@ -2096,7 +2096,7 @@ LTV делает богатым, пусть клиент будет с тобо�
     format: 'video',
     tags: ['метрика', 'аналитика', 'настройка', 'гайд'],
     videoId: 'PixM5JJrLao',
-    thumbnail: 'https://img.youtube.com/vi/PixM5JJrLao/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/PixM5JJrLao/hqdefault.jpg',
     createdAt: '2025-07-09',
     incomeLevel: ['start', 'growth'],
     content: `Просили — держите. Внутри прям полный скринкаст:
@@ -2156,7 +2156,7 @@ LTV делает богатым, пусть клиент будет с тобо�
     tags: ['тарифы', 'чек', 'продажи', 'шаблон'],
     duration: '35 мин',
     videoId: 'ZUdwQA4Ooh0',
-    thumbnail: 'https://img.youtube.com/vi/ZUdwQA4Ooh0/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/ZUdwQA4Ooh0/hqdefault.jpg',
     createdAt: '2025-08-04',
     incomeLevel: ['start', 'growth'],
     content: `С 2014 по 2017 год я вырос в чеке с 3500₽ до $16000 за проект.
@@ -2225,7 +2225,7 @@ LTV делает богатым, пусть клиент будет с тобо�
     format: 'video',
     tags: ['AI', 'инструменты', 'нейросети', 'продуктивность'],
     videoId: '_3uWp-7eTUs',
-    thumbnail: 'https://img.youtube.com/vi/_3uWp-7eTUs/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/_3uWp-7eTUs/hqdefault.jpg',
     createdAt: '2025-08-26',
     incomeLevel: ['start', 'growth', 'scale'],
     content: `Раз пошла такая пьянка — в загашнике лежит инструкция про базу работы с ИИ.
@@ -2248,7 +2248,7 @@ LTV делает богатым, пусть клиент будет с тобо�
     format: 'video',
     tags: ['старт', '100к', 'стратегия', 'план'],
     videoId: 'fLeKuURL5Po',
-    thumbnail: 'https://img.youtube.com/vi/fLeKuURL5Po/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/fLeKuURL5Po/hqdefault.jpg',
     createdAt: '2025-09-22',
     incomeLevel: ['start'],
     content: `Пошагово, в реалиях 2025–2026.
@@ -2278,7 +2278,7 @@ LTV делает богатым, пусть клиент будет с тобо�
     format: 'video',
     tags: ['планёрки', 'команда', 'zoom', 'шаблон'],
     videoId: 'oSmh6geJsIg',
-    thumbnail: 'https://img.youtube.com/vi/oSmh6geJsIg/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/oSmh6geJsIg/hqdefault.jpg',
     externalUrl: 'https://www.figma.com/board/0vLAcDZc2vDYkP0X2DoB8H/Шаблон-пятничной-планерки',
     createdAt: '2025-10-29',
     incomeLevel: ['growth', 'scale'],
@@ -2312,7 +2312,7 @@ LTV делает богатым, пусть клиент будет с тобо�
     tags: ['найм', 'миллион', 'стратегия', 'карьера'],
     duration: '5-8 мин',
     videoId: 'ZeAmOQIauc0',
-    thumbnail: 'https://img.youtube.com/vi/ZeAmOQIauc0/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/ZeAmOQIauc0/hqdefault.jpg',
     createdAt: '2025-11-24',
     incomeLevel: ['scale'],
     content: `Читал Канемана «Думай медленно, решай быстро». Нобелевский лауреат по принятию решений. И наткнулся на исследование:
