@@ -28,6 +28,10 @@ export function RelatedMaterials({ materials }: RelatedMaterialsProps) {
               categoryIcon={material.categoryIcon}
               format={material.format}
               href={`/library/${material.slug}`}
+              thumbnail={material.thumbnail}
+              videoId={material.videoId}
+              image={material.image}
+              iconName={material.iconName}
               duration={material.duration}
               tags={material.tags}
             />

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Badge } from './Badge'
-import { Play, FileText, Download, Clock } from 'lucide-react'
+import { Play, FileText, Download, Clock, LucideIcon } from 'lucide-react'
+import * as Icons from 'lucide-react'
 
 interface CardProps {
   title: string
@@ -12,8 +13,55 @@ interface CardProps {
   thumbnail?: string
   videoId?: string
   image?: string
+  iconName?: string
   duration?: string
   tags?: string[]
+}
+
+// Маппинг названий иконок к компонентам
+const iconMap: Record<string, LucideIcon> = {
+  Target: Icons.Target,
+  Shield: Icons.Shield,
+  Rocket: Icons.Rocket,
+  Compass: Icons.Compass,
+  DollarSign: Icons.DollarSign,
+  Flame: Icons.Flame,
+  TrendingUp: Icons.TrendingUp,
+  Scale: Icons.Scale,
+  CheckSquare: Icons.CheckSquare,
+  Users: Icons.Users,
+  Handshake: Icons.Handshake,
+  Zap: Icons.Zap,
+  Layers: Icons.Layers,
+  Crown: Icons.Crown,
+  Focus: Icons.Focus,
+  Coins: Icons.Coins,
+  RefreshCw: Icons.RefreshCw,
+  Percent: Icons.Percent,
+  Calculator: Icons.Calculator,
+  Lock: Icons.Lock,
+  Lightbulb: Icons.Lightbulb,
+  Flower2: Icons.Flower2,
+  UserX: Icons.UserX,
+  Map: Icons.Map,
+  Calendar: Icons.Calendar,
+  Footprints: Icons.Footprints,
+  Clock: Icons.Clock,
+  Settings: Icons.Settings,
+  Hexagon: Icons.Hexagon,
+  Trophy: Icons.Trophy,
+  MessageSquare: Icons.MessageSquare,
+  Wind: Icons.Wind,
+  Key: Icons.Key,
+  Store: Icons.Store,
+  Factory: Icons.Factory,
+  ShoppingCart: Icons.ShoppingCart,
+  GraduationCap: Icons.GraduationCap,
+  Mail: Icons.Mail,
+  Heart: Icons.Heart,
+  FileCheck: Icons.FileCheck,
+  Battery: Icons.Battery,
+  Dumbbell: Icons.Dumbbell,
 }
 
 const formatConfig = {
@@ -32,6 +80,7 @@ export function Card({
   thumbnail,
   videoId,
   image,
+  iconName,
   duration,
   tags,
 }: CardProps) {
@@ -39,6 +88,9 @@ export function Card({
 
   // Генерируем thumbnail URL: приоритет - image, потом thumbnail, потом videoId, иначе null
   const thumbnailUrl = image || thumbnail || (videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : null)
+
+  // Получаем компонент иконки из маппинга
+  const IconComponent = iconName ? iconMap[iconName] : null
 
   return (
     <Link href={href} className="block group">
@@ -58,6 +110,10 @@ export function Card({
                 </div>
               </div>
             )}
+          </div>
+        ) : IconComponent ? (
+          <div className="aspect-video bg-gradient-to-br from-[#16162A] via-[#0D0D1A] to-[#7C3AED]/20 flex items-center justify-center">
+            <IconComponent className="w-16 h-16 text-[#7C3AED]" strokeWidth={1.5} />
           </div>
         ) : (
           <div className="aspect-video bg-gradient-to-b from-[#16162A] to-[#1A1A2E] flex items-center justify-center">

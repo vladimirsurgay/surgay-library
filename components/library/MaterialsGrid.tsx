@@ -45,6 +45,8 @@ export function MaterialsGrid({ materials, onResetFilters }: MaterialsGridProps)
             href={`/library/${material.slug}`}
             thumbnail={material.thumbnail}
             videoId={material.videoId}
+            image={material.image}
+            iconName={material.iconName}
             duration={material.duration}
             tags={material.tags}
           />
