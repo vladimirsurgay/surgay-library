@@ -62,6 +62,9 @@ const iconMap: Record<string, LucideIcon> = {
   FileCheck: Icons.FileCheck,
   Battery: Icons.Battery,
   Dumbbell: Icons.Dumbbell,
+  Repeat: Icons.Repeat,
+  Droplets: Icons.Droplets,
+  AlertTriangle: Icons.AlertTriangle,
 }
 
 const formatConfig = {
