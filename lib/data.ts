@@ -85,7 +85,7 @@ export const materials: Material[] = [
     duration: '5-7 мин',
     createdAt: '2022-12-02',
     incomeLevel: ['scale'],
-    thumbnail: '/images/materials/skript-diagnostik.jpg',
+    thumbnail: '/images/materials/material-skript-diagnostik.png',
     downloads: [
       { name: 'Скрипт продающих диагностик на 7,5 миллионов.pdf', url: '/templates/skript-diagnostik.pdf', size: '1.9 MB' }
     ],
@@ -5153,7 +5153,7 @@ Middle — это фундамент. Здесь ты учишься **само�
     createdAt: '2022-08-16',
     incomeLevel: ['growth', 'scale'],
     featured: true,
-    thumbnail: '/images/materials/material-70-good-to-great.jpg',
+    thumbnail: '/images/materials/material-ot-horoshego.png',
     downloads: [
       {
         name: 'От хорошего к великому (конспект книги).pdf',
