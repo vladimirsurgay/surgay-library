@@ -14,7 +14,7 @@ import {
   getCategoryById,
   getAllMaterials
 } from '@/lib/data'
-import { Calendar, Clock, ArrowLeft, Play, FileText, Download } from 'lucide-react'
+import { Calendar, Clock, ArrowLeft, Play, FileText, Download, Info } from 'lucide-react'
 import Link from 'next/link'
 
 interface PageProps {
@@ -165,7 +165,17 @@ export default function MaterialPage({ params }: PageProps) {
 
         {/* Video (if exists) */}
         {material.videoId && (
-          <div className="mb-8">
+          <div className="mb-8 space-y-4">
+            {/* VPN Notice */}
+            <div className="bg-gradient-to-r from-[#7C3AED]/10 to-[#22D3EE]/10 border border-[#7C3AED]/30 rounded-xl p-4">
+              <div className="flex items-start gap-3">
+                <Info className="w-5 h-5 text-[#A78BFA] flex-shrink-0 mt-0.5" />
+                <p className="text-sm text-[#D1D5DB]">
+                  Пожалуйста, включите VPN, чтобы всё работало
+                </p>
+              </div>
+            </div>
+
             <VideoEmbed
               videoId={material.videoId}
               title={material.title}
