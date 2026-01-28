@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Badge } from './Badge'
 import { Play, FileText, Download, Clock, LucideIcon } from 'lucide-react'
 import * as Icons from 'lucide-react'
+import { categories } from '@/lib/data'
 
 interface CardProps {
   title: string
@@ -130,7 +131,7 @@ export function Card({
           <div className="flex flex-wrap gap-2 mb-3">
             <Badge variant="category">
               {categoryIcon && <span>{categoryIcon}</span>}
-              {category}
+              {categories.find(c => c.id === category)?.label || category}
             </Badge>
             <Badge variant="format">
               <FormatIcon className="w-3.5 h-3.5" />

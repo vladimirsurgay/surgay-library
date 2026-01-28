@@ -1,11 +1,8 @@
 import { Button } from '@/components/ui'
-import { Play } from 'lucide-react'
 
-interface HeroSectionProps {
-  videoId?: string
-}
+const RUTUBE_VIDEO_ID = '3798b9068c11de66bf5c436b756feae3'
 
-export function HeroSection({ videoId }: HeroSectionProps) {
+export function HeroSection() {
   return (
     <section className="relative bg-gradient-to-b from-[#0D0D1A] to-[#1A1A2E] py-20 md:py-32 overflow-hidden">
       {/* Background glow effects */}
@@ -58,25 +55,15 @@ export function HeroSection({ videoId }: HeroSectionProps) {
             </div>
           </div>
 
-          {/* Right: Video placeholder */}
+          {/* Right: Video */}
           <div className="relative">
             <div className="aspect-video bg-[#16162A] rounded-2xl overflow-hidden border border-white/10 shadow-[0_0_40px_rgba(124,58,237,0.4)]">
-              {videoId ? (
-                <iframe
-                  src={`https://www.youtube.com/embed/${videoId}`}
-                  title="Hero video"
-                  className="w-full h-full"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              ) : (
-                <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-b from-[#16162A] to-[#1A1A2E]">
-                  <div className="w-20 h-20 rounded-full bg-[#7C3AED]/30 flex items-center justify-center mb-4 animate-pulse">
-                    <Play className="w-10 h-10 text-[#A78BFA] ml-1" />
-                  </div>
-                  <p className="text-[#9CA3AF] text-sm">Видео скоро появится</p>
-                </div>
-              )}
+              <iframe
+                src={`https://rutube.ru/play/embed/${RUTUBE_VIDEO_ID}`}
+                allow="clipboard-write; autoplay"
+                allowFullScreen
+                className="w-full h-full border-0"
+              />
             </div>
 
             {/* Floating badges */}
