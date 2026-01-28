@@ -26,14 +26,6 @@ const stats = [
   { value: '300+ млн', label: 'крупнейший проект', icon: Award },
 ]
 
-const milestones = [
-  { year: '2012', text: 'Начало пути в маркетинге' },
-  { year: '2015', text: 'Запуск первого обучения' },
-  { year: '2020', text: 'Преподаватель магистратуры ВШЭ' },
-  { year: '2025', text: 'Создание SurgayGPT' },
-  { year: '2026', text: 'Запуск бесплатной библиотеки' },
-]
-
 const philosophy = [
   {
     icon: Target,
@@ -201,44 +193,6 @@ export default function AboutPage() {
                 <p className="text-[#9CA3AF] text-sm">{item.description}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Timeline */}
-      <section className="section-dark bg-[#1A1A2E]">
-        <div className="max-w-3xl mx-auto">
-          <SectionTitle
-            title="Путь"
-            highlight="развития"
-          />
-
-          <div className="relative">
-            {/* Line */}
-            <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-[#7C3AED] via-[#22D3EE] to-[#7C3AED]" />
-
-            {/* Milestones */}
-            <div className="space-y-8">
-              {milestones.map((milestone, index) => (
-                <div
-                  key={milestone.year}
-                  className={`relative flex items-center gap-6 ${
-                    index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                  }`}
-                >
-                  {/* Dot */}
-                  <div className="absolute left-4 md:left-1/2 w-3 h-3 rounded-full bg-[#7C3AED] -translate-x-1/2 ring-4 ring-[#1A1A2E]" />
-
-                  {/* Content */}
-                  <div className={`ml-12 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'}`}>
-                    <div className="bg-[#0D0D1A] rounded-xl p-4 border border-white/5">
-                      <span className="text-[#A78BFA] font-bold">{milestone.year}</span>
-                      <p className="text-white mt-1">{milestone.text}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
